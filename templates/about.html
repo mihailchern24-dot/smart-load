@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}О проекте - Умная разгрузка{% endblock %}
+{% block title %}О проекте - Smart-Load{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -25,97 +25,79 @@
     </div>
     
     <div class="content">
-        <h1><i class="fas fa-rocket"></i> Умная разгрузка</h1>
+        <h1><i class="fas fa-rocket"></i> Smart-Load</h1>
         
         <div class="about-section" style="margin-bottom: 40px; padding: 25px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #3498db;">
-            <h2><i class="fas fa-info-circle"></i> О проекте</h2>
-            <p><strong>Умная разгрузка</strong> — это современное веб-приложение для управления задачами с функциями напоминаний и удобным интерфейсом.</p>
-            <p>Проект создан как демонстрация возможностей Full-stack разработки и может служить основой для более сложных систем управления задачами.</p>
+            <h2><i class="fas fa-graduation-cap"></i> О проекте</h2>
+            <p><strong>Smart-Load</strong> — это веб-приложение для управления учебными задачами, разработанное в рамках школьного проекта по информатике.</p>
+            <p>Основная идея проекта — помочь школьникам эффективно планировать своё время, не забывать о домашних заданиях и снизить учебный стресс за счёт наглядного списка дел и системы напоминаний.</p>
+        </div>
+        
+        <div class="about-section" style="margin-bottom: 40px; background: #e8f4fc; padding: 25px; border-radius: 10px; border-left: 4px solid #2ecc71;">
+            <h2><i class="fas fa-user-tie"></i> О проекте</h2>
+            <p>Проект создан в образовательных целях для демонстрации навыков веб-разработки и изучения следующих тем:</p>
+            <ul style="margin: 15px 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Создание веб-приложений на фреймворке Flask</li>
+                <li style="margin-bottom: 8px;">Проектирование и работа с базами данных (SQLAlchemy, PostgreSQL)</li>
+                <li style="margin-bottom: 8px;">Реализация аутентификации и авторизации пользователей</li>
+                <li style="margin-bottom: 8px;">Разработка клиентской части на HTML, CSS и JavaScript</li>
+                <li style="margin-bottom: 8px;">Создание REST API для взаимодействия с сервером</li>
+                <li style="margin-bottom: 8px;">Система автоматических напоминаний о дедлайнах</li>
+            </ul>
+            <p>Данный проект является выпускной работой и демонстрирует полученные знания в области информатики и веб-технологий.</p>
         </div>
         
         <div class="about-section" style="margin-bottom: 40px;">
             <h2><i class="fas fa-star"></i> Основные возможности</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 25px 0;">
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <h3 style="color: #3498db; margin-bottom: 10px; font-size: 1.1em;"><i class="fas fa-tasks"></i> Управление задачами</h3>
-                    <p>Создание, редактирование, удаление задач с приоритетами и сроками выполнения</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 25px 0;">
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #3498db; margin-bottom: 10px;"><i class="fas fa-tasks"></i> Управление задачами</h3>
+                    <p>Создание, выполнение и удаление учебных задач с указанием сроков</p>
                 </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <h3 style="color: #3498db; margin-bottom: 10px; font-size: 1.1em;"><i class="fas fa-bell"></i> Умные напоминания</h3>
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #3498db; margin-bottom: 10px;"><i class="fas fa-bell"></i> Умные напоминания</h3>
                     <p>Автоматические уведомления о приближающихся дедлайнах</p>
                 </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <h3 style="color: #3498db; margin-bottom: 10px; font-size: 1.1em;"><i class="fas fa-sync-alt"></i> Автообновление</h3>
-                    <p>Периодическое обновление задач и проверка напоминаний</p>
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #3498db; margin-bottom: 10px;"><i class="fas fa-user-lock"></i> Личный кабинет</h3>
+                    <p>Регистрация и авторизация — каждый пользователь видит только свои задачи</p>
                 </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <h3 style="color: #3498db; margin-bottom: 10px; font-size: 1.1em;"><i class="fas fa-mobile-alt"></i> Адаптивный дизайн</h3>
-                    <p>Удобный интерфейс для компьютеров, планшетов и телефонов</p>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <h3 style="color: #3498db; margin-bottom: 10px; font-size: 1.1em;"><i class="fas fa-shield-alt"></i> Безопасность</h3>
-                    <p>Аутентификация пользователей, защита паролей</p>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <h3 style="color: #3498db; margin-bottom: 10px; font-size: 1.1em;"><i class="fas fa-chart-line"></i> Пагинация</h3>
-                    <p>Загрузка задач постранично для оптимальной производительности</p>
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #3498db; margin-bottom: 10px;"><i class="fas fa-mobile-alt"></i> Адаптивный дизайн</h3>
+                    <p>Удобная работа с компьютера, планшета или телефона</p>
                 </div>
             </div>
         </div>
         
         <div class="about-section" style="margin-bottom: 40px;">
-            <h2><i class="fas fa-code"></i> Технологический стек</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin: 25px 0;">
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <h3 style="color: #2c3e50; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee;">Backend</h3>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;"><strong style="color: #3498db;">Python 3</strong> — основной язык программирования</li>
-                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;"><strong style="color: #3498db;">Flask</strong> — веб-фреймворк</li>
-                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;"><strong style="color: #3498db;">SQLAlchemy</strong> — ORM для работы с БД</li>
-                        <li style="padding: 8px 0;"><strong style="color: #3498db;">Flask-Login</strong> — аутентификация пользователей</li>
-                    </ul>
-                </div>
-                
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <h3 style="color: #2c3e50; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee;">Frontend</h3>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;"><strong style="color: #3498db;">HTML5 / CSS3</strong> — разметка и стили</li>
-                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;"><strong style="color: #3498db;">JavaScript (ES6+)</strong> — клиентская логика</li>
-                        <li style="padding: 8px 0;"><strong style="color: #3498db;">Fetch API</strong> — асинхронные HTTP запросы</li>
-                    </ul>
-                </div>
-                
-                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <h3 style="color: #2c3e50; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee;">База данных</h3>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;"><strong style="color: #3498db;">PostgreSQL</strong> — основная БД</li>
-                        <li style="padding: 8px 0;"><strong style="color: #3498db;">Flask-Migrate</strong> — миграции схемы БД</li>
-                    </ul>
-                </div>
+            <h2><i class="fas fa-code"></i> Технологии</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0;">
+                <span style="background: #3498db; color: white; padding: 8px 16px; border-radius: 20px;">Python 3.11</span>
+                <span style="background: #2c3e50; color: white; padding: 8px 16px; border-radius: 20px;">Flask</span>
+                <span style="background: #27ae60; color: white; padding: 8px 16px; border-radius: 20px;">SQLAlchemy</span>
+                <span style="background: #e67e22; color: white; padding: 8px 16px; border-radius: 20px;">PostgreSQL</span>
+                <span style="background: #3498db; color: white; padding: 8px 16px; border-radius: 20px;">HTML5/CSS3</span>
+                <span style="background: #f1c40f; color: #2c3e50; padding: 8px 16px; border-radius: 20px;">JavaScript ES6</span>
+                <span style="background: #9b59b6; color: white; padding: 8px 16px; border-radius: 20px;">Flask-Login</span>
             </div>
         </div>
         
-        <div class="about-section" style="background: #e8f4fc; padding: 25px; border-radius: 10px; border-left: 4px solid #2ecc71; margin-bottom: 40px;">
-            <h2><i class="fas fa-user-tie"></i> Об авторе</h2>
-            <p>Проект разработан в образовательных целях для освоения:</p>
-            <ul style="margin: 15px 0; padding-left: 20px;">
-                <li style="margin-bottom: 8px;">Full-stack веб-разработки</li>
-                <li style="margin-bottom: 8px;">Создания RESTful API</li>
-                <li style="margin-bottom: 8px;">Работы с базами данных</li>
-                <li style="margin-bottom: 8px;">Аутентификации и авторизации</li>
-                <li style="margin-bottom: 8px;">UX/UI дизайна и frontend разработки</li>
-            </ul>
-            <p>Код проекта является открытым и может использоваться как основа для обучения или создания собственных приложений.</p>
+        <div class="about-section" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 40px;">
+            <h2><i class="fas fa-lightbulb"></i> Актуальность проекта</h2>
+            <p>Современные школьники сталкиваются с высокой учебной нагрузкой. Отсутствие системы планирования приводит к забытым дедлайнам, спешке и стрессу. Существующие приложения либо перегружены функциями, либо не учитывают специфику учебного процесса. Smart-Load решает эту проблему, предоставляя простой и понятный инструмент для управления учебными задачами.</p>
         </div>
         
         <div class="about-section" style="margin-bottom: 40px;">
             <h2><i class="fas fa-road"></i> Планы развития</h2>
             <ul style="margin: 15px 0; padding-left: 20px;">
-                <li style="margin-bottom: 8px;">Добавление категорий и тегов для задач</li>
-                <li style="margin-bottom: 8px;">Экспорт задач в различные форматы (PDF, CSV)</li>
-                <li style="margin-bottom: 8px;">Интеграция с календарями (Google Calendar, Outlook)</li>
-                <li style="margin-bottom: 8px;">Мобильное приложение (React Native)</li>
-                <li style="margin-bottom: 8px;">API для интеграции с другими системами</li>
+                <li style="margin-bottom: 8px;">Добавление категорий задач по предметам</li>
+                <li style="margin-bottom: 8px;">Визуальный календарь для распределения задач по дням</li>
+                <li style="margin-bottom: 8px;">Экспорт задач в PDF для печати</li>
+                <li style="margin-bottom: 8px;">Мобильное приложение на React Native</li>
+                <li style="margin-bottom: 8px;">Интеграция с электронным дневником</li>
+                <li style="margin-bottom: 8px; background: #f0f8ff; padding: 8px 12px; border-radius: 8px; border-left: 3px solid #3498db;">
+                    <strong>Создание аккаунтов для учителей и родителей</strong> — чтобы родители могли контролировать планы учеников, а учителя понимали, ждать ли ученика на уроке, выполнил ли он домашнее задание или нет
+                </li>
             </ul>
         </div>
         
